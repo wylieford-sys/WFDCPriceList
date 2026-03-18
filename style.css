@@ -36,20 +36,10 @@ img { max-width: 100%; display: block; }
   align-items: center;
   text-align: center;
 }
-.hero-logo-text {
-  font-family: 'Satisfaction', cursive;
-  font-size: clamp(2rem, 8vw, 4rem);
-  letter-spacing: .03em;
-  text-transform: none;
-  color: #fff;
-  display: inline-block;
-  white-space: nowrap;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: transparent;
-  box-shadow: none;
+.hero-logo-image {
+  max-height: 120px;
+  width: auto;
+  display: block;
 }
 .eyebrow {
   margin: 0 0 12px;
