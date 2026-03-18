@@ -85,7 +85,7 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
   background: var(--card);
   border: 1px solid #ddd;
   border-radius: 18px;
-  padding: 30px 24px 26px;
+  padding: 28px 24px;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
@@ -111,6 +111,9 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
   padding: 3px;
   background: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -267,6 +270,8 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
 .addon-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .print-grid { grid-template-columns: 1.1fr .9fr .8fr; align-items: start; }
 .center, .center-text { text-align: center; }
+.service-cards { align-items: stretch; }
+.service-cards .card { height: 100%; }
 .mini-card { padding-top: 26px; }
 .big-price {
   margin-top: 22px;
