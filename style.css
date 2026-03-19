@@ -85,7 +85,7 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
   background: var(--card);
   border: 1px solid #ddd;
   border-radius: 18px;
-  padding: 28px 24px;
+  padding: 30px 24px 26px;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
@@ -182,6 +182,18 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
   font-size: 0.9rem;
   top: 0;
 }
+.premium-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 0;
+  margin-bottom: 18px;
+}
+.premium-grid .check-list {
+  width: min(100%, 280px);
+  max-width: 280px;
+  margin: 0;
+}
 .check-list { list-style: none; margin: 0 auto 18px; padding: 0; color: #111; font-size: .95rem; line-height: 1.4; max-width: 280px; text-align: left; }
 .check-list li { margin-bottom: 8px; }
 .price-lines div span {
@@ -270,8 +282,6 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
 .addon-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .print-grid { grid-template-columns: 1.1fr .9fr .8fr; align-items: start; }
 .center, .center-text { text-align: center; }
-.service-cards { align-items: stretch; }
-.service-cards .card { height: 100%; }
 .mini-card { padding-top: 26px; }
 .big-price {
   margin-top: 22px;
@@ -292,7 +302,7 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
   .featured { transform: none; }
   .hero { padding-top: 34px; }
   .hero-copy { padding-bottom: 10px; }
-  .premium-grid { grid-template-columns: 1fr; }
+  .premium-grid { grid-template-columns: 1fr; gap: 0; }
 }
 @media (max-width: 640px) {
   .wrap { width: min(100% - 20px, 1180px); }
