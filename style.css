@@ -285,6 +285,15 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
 .service-cards { align-items: stretch; }
 .service-cards .card { height: 100%; }
 .mini-card { padding-top: 26px; }
+.print-services h2 { margin-bottom: 12px; }
+.print-services .intro {
+  margin: 0 auto 14px;
+  max-width: 54ch;
+}
+.print-services .package-price {
+  margin-top: 0;
+  gap: 2px;
+}
 .big-price {
   margin-top: 22px;
   font-family: var(--condensed);
