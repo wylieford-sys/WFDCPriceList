@@ -282,6 +282,8 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
 .addon-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .print-grid { grid-template-columns: 1.1fr .9fr .8fr; align-items: start; }
 .center, .center-text { text-align: center; }
+.service-cards { align-items: stretch; }
+.service-cards .card { height: 100%; }
 .mini-card { padding-top: 26px; }
 .big-price {
   margin-top: 22px;
