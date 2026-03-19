@@ -309,7 +309,7 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
 @media (max-width: 640px) {
   .wrap { width: min(100% - 20px, 1180px); }
   .card, .panel { padding: 22px 16px 18px; }
-  .featured { padding-top: 62px; }
+  .featured { padding-top: 30px; }
   .section { padding: 28px 0; }
   h2 { margin-bottom: 14px; }
   .price-list li {
