@@ -83,7 +83,6 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
 .card, .panel {
   position: relative;
   background: var(--card);
-  border: 10px solid #a60000;
   border-radius: 18px;
   padding: 30px 24px 26px;
   box-shadow: var(--shadow);
@@ -94,7 +93,6 @@ h4 { font-size: 1rem; text-align: center; margin-bottom: 14px; }
 .package { min-height: 100%; }
 .featured {
   border-radius: 20px;
-  border: 10px solid #a60000;
   background: #fff;
   box-shadow: 0 18px 40px rgba(0,0,0,.14), 0 4px 10px rgba(0,0,0,.06);
   position: relative;
