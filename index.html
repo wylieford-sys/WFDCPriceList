@@ -10,6 +10,7 @@
   <header class="hero">
     <div class="wrap hero-inner">
       <img src="logo-hero.png" alt="WylieFord.com logo" class="hero-logo-image" />
+      <a class="hero-cta" href="https://listings.wylieford.com/portal" target="_blank" rel="noopener noreferrer">Book Now!</a>
     </div>
   </header>
 
@@ -132,5 +133,15 @@
     </section>
 
   </main>
+  <script>
+    const heroCta = document.querySelector('.hero-cta');
+    const updateHeroCta = () => {
+      heroCta.classList.toggle('is-floating', window.scrollY > 16);
+    };
+
+    window.addEventListener('scroll', updateHeroCta, { passive: true });
+    window.addEventListener('resize', updateHeroCta);
+    updateHeroCta();
+  </script>
 </body>
 </html>
