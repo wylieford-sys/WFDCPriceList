@@ -478,6 +478,10 @@ a.panel strong {
   .hero-cta {
     width: fit-content;
   }
+  .hero-actions > a {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .hero-cta.is-floating {
     bottom: 16px;
     top: auto;
