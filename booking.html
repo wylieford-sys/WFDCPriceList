@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WylieFord.com Booking Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <img src="logo-hero.png" alt="WylieFord.com logo" class="hero-logo-image" />
+      <div class="booking-intro">
+        <h1>How to place your order</h1>
+        <p class="subcopy">Our booking page lets you choose services, answer the required questions, schedule the appointment, and submit everything in one place.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="hero-cta" href="https://listings.wylieford.com/order-forms/329c6c3a-37f0-46a2-b10a-2ce436ed7c90" target="_blank" rel="noopener noreferrer">Book Now!</a>
+        <a class="hero-link" href="index.html">Back to Pricing</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section light">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Before you submit</h2>
+        </div>
+
+        <div class="cards cards-3">
+          <article class="card">
+            <p class="eyebrow dark">Step 1</p>
+            <h3>Address and details</h3>
+            <p class="package-includes">Enter the property address and the required details first.</p>
+          </article>
+
+          <article class="card">
+            <p class="eyebrow dark">Step 2</p>
+            <h3>Pick a service</h3>
+            <p class="package-includes">Choose the package and any add-ons once the address and details are filled out.</p>
+          </article>
+
+          <article class="card">
+            <p class="eyebrow dark">Step 3</p>
+            <h3>Schedule and submit</h3>
+            <p class="package-includes">Choose the appointment time shown on the booking page, then submit the order to confirm the booking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light soft-top">
+      <div class="wrap">
+        <article class="panel wide">
+          <h2>Helpful prep</h2>
+          <p class="center-text intro">These quick checks help the appointment go smoothly and reduce back-and-forth after the order is submitted.</p>
+          <div class="cards cards-2 top-gap">
+            <div class="card">
+              <h3>Inside the home</h3>
+              <ul class="check-list">
+                <li>Turn on all lights</li>
+                <li>Open blinds and curtains</li>
+                <li>Clear counters and visible clutter</li>
+                <li>Put away personal items</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Outside the home</h3>
+              <ul class="check-list">
+                <li>Move cars out of the driveway</li>
+                <li>Close garage doors</li>
+                <li>Tidy patios and entryways</li>
+                <li>Water grass if needed</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section light soft-top bottom-pad">
+      <div class="wrap">
+        <div class="cards cards-2">
+          <article class="card">
+            <h3>Ready to order?</h3>
+            <p class="package-includes">Open the booking page and submit your request when you're ready.</p>
+            <a class="button" href="https://listings.wylieford.com/order-forms/329c6c3a-37f0-46a2-b10a-2ce436ed7c90" target="_blank" rel="noopener noreferrer">Open Booking Page</a>
+          </article>
+
+          <article class="card">
+            <h3>Want to compare first?</h3>
+            <p class="package-includes">Go back to the pricing page to review the package options again.</p>
+            <a class="button" href="index.html">View Pricing</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const heroCta = document.querySelector('.hero-cta');
+    const updateHeroCta = () => {
+      heroCta.classList.toggle('is-floating', window.scrollY > 16);
+    };
+
+    window.addEventListener('scroll', updateHeroCta, { passive: true });
+    window.addEventListener('resize', updateHeroCta);
+    updateHeroCta();
+  </script>
+</body>
+</html>
