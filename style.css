@@ -466,7 +466,12 @@ a.panel strong {
   .featured h3 { margin-top: 20px; }
   .section { padding: 28px 0; }
   h2 { margin-bottom: 14px; }
-  .hero-actions { flex-direction: column; width: 100%; }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
   .hero-link {
     width: fit-content;
   }
